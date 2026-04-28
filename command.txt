@@ -1,0 +1,25 @@
+sudo yum install httpd -y
+sudo systemctl start httpd
+cd /var/www/html
+sudo nano index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Healthcare App</title>
+</head>
+<body style="font-family: Arial; text-align: center;">
+
+  <h1>🏥 Healthcare System</h1>
+
+  <h3>Patient Registration</h3>
+
+  <form>
+    Name: <input type="text"><br><br>
+    Age: <input type="number"><br><br>
+    Disease: <input type="text"><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
